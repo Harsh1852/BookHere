@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    height: 100%;
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+/* Header Start */
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.header .logo {
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    display: inherit;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header .logo ion-icon {
+    margin-right: 8px;
+}
+.nav {
+    display: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.nav a::first-of-type {
+    margin-left: 0px;
+}
+.nav a:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+.active {
+    transform: scale(1.5);
+}
+
+/* Header End */
+/* Login Page */
+
+.background_image {
+    background: url('../images/index_cover.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: -webkit-fill-available;
+}
+.login_page { 
+    position: absolute;
+    display: flex;
+    align-items: center ;
+    padding: 20px 20px;
+}
+.login_page_content {
+    max-width: 60%;
+    color: white;
+}
+.login_page_content h2 {
+    font-size: 2.2em;
+    letter-spacing: .03em;
+}
+.login_page_content p {
+    margin: 10px 0 40px;
+    text-align: justify;
+}
+.intext_button {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 40px;
+}
+.intext_button:hover {
+    background: rgba(0, 0, 0, 0.555);
+}
+
+.custom-card {
+    display: inline-block;
+    width: fit-content;
+    min-width: 350px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.456);
+}
+
+.custom-card {
+    display: inline-block;
+    width: fit-content;
+    min-width: 350px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.456);
+}
+
+.custom-card-r {
+    display: inline-block;
+    width: 350px;
+    min-width: 350px;
+    height: 270px;
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.456);
+}
+.wrapper-login {
+    width: 40%;
+    min-width: 400px;
+    text-align: center;
+}
+.wrapper-login h2 {
+    font-size: 2em;
+    color: white;
+}
+.input-box {
+    position: relative;
+    height: 50px;
+    margin: 40px 0;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 1em;
+    color: white;
+    padding: 0 25px 0 45px;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    font-size: 0.8em;
+    top: -14px;
+    left: 17px;
+}
+.input-box .icon {
+    position: absolute;
+    font-size: 1.2em;
+    color: white;
+    top: 14px;
+    left: 15px;
+}
+.remember-forgot {
+    font-size: .9em;
+    color: white;
+    font-weight: 500;
+    margin: -25px 0  15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+.remember-forgot label input {
+    accent-color: #1e0b04;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+.submit-btn {
+    width: 100%;
+    height: fit-content;
+    padding: 11px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: black;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+    transition: .3s;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background: linear-gradient(90deg,rgb(44, 44, 225), rgb(118, 17, 235) );
+    transition: .3s;
+}
+.reg-link {
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+}
+.reg-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600px;
+}
+.reg-link p a:hover {
+    text-decoration: underline;
+}
+
+/* Login End */
+/* About Us Page */
+
+.about-us_page {
+    position: relative;
+}
+.about-us_image {
+    aspect-ratio: auto;
+    object-fit: contain;
+    width: 70%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+}
+.about-us_name {
+    color: white;
+}
+.about-us_desc {
+    color: white;
+    text-align: justify;
+}
+
+/* About Us End */
+/* Menu Page */
+
+.hotel .hotel_img img {
+    height: 300px; 
+    margin-top: 10vh; 
+    margin-left: 2vh; 
+    border-radius: 20px;
+}
+.hotel .Hotel-detail {
+    left: 50vh;
+}
+.container-fluid {
+    margin-top: 11vh;
+}
+.container-fluid .row{
+    padding-bottom: 5vh;
+}
+
+
+/* left content */
+.menu_card {
+
+}
+.menu_image {
+    aspect-ratio: auto;
+    width: 100%;
+}
+
+.img1 img{
+    height: 40vh;
+    margin-left: 2vh;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.img1 img:hover{
+    border-radius: 0px;
+}
+
+.img1 span{
+    float: right; 
+    margin-left: 10px; 
+    margin-top: 40px;
+}
+
+.content1{
+    /* background-color: rgba(0, 0, 0, 0.296); */
+    font-size: larger;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 4vw;
+    text-align: justify;
+}
+
+/* right content */
+.content1 a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 40px;
+    transition: .5s;
+}
+
+.content1 a:hover{
+    background-color: rgba(0, 0, 0, 0.41);
+    color: white;
+}
+
+.img2 img{
+    height: 40vh;
+    margin-left: 5vh;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.img2 img:hover{
+    border-radius: 0px;
+}
+
+.content2{
+    /* background-color: rgba(0, 0, 0, 0.296); */
+    font-size: larger;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    text-align: justify;
+}
+
+.content2 a{
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 40px;
+    transition: .5s;
+}
+
+.content2 a:hover{
+    background-color: rgba(0, 0, 0, 0.41);
+    color: white;
+}
+
+/* Menu End */
+
+
+/* Contact */
+
+.contact-us h2{
+    color: white;
+    text-align: justify;
+}
+.contact-us p{
+    color: white;
+    text-align: justify;
+}
+.contact-us h1{
+    color: white;
+    text-align: center;
+}
+
+/* Contact End */
+
+/* Review */
+.review h2{
+    color: white;
+    text-align: center;
+}
+.review p{
+    color: white;
+    text-align: justify;
+}
+
+/* Review End */
+
+/* Event Detail */
+.img-e img{
+    height: 40vh;
+    margin-left: 2vh;
+    margin-top: 1.5vh;
+    border-radius: 30px;
+    transition: .5s;
+}
+.img-e img:hover{
+    border-radius: 0px;
+}
+.img-e h5{
+    color: whitesmoke;
+    margin-left: 60px;
+}

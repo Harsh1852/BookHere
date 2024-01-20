@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Icon Link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Javascript -->
+    <script src="js/register.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>Registration</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <ion-icon name="ticket-outline"></ion-icon>
+            <span>BookHere</span>
+        </a>
+        <nav class="nav">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="review.html">Reviews</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About us</a>
+        </nav>
+    </header>
+    <section class="background_image login_page">
+        <div class="login_page_content">
+            <h2>Book Everything at Single Click</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aut vel, at, quia libero suscipit temporibus eaque velit amet, deleniti saepe fugit aliquid ipsum modi laudantium quasi nulla? Ipsam, quos.</p>
+            <a href="home.html" class="intext_button">Get Started</a>
+        </div>
+        <div class="wrapper-login">
+            <div class="custom-card">
+                <h2>Member Signup</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="name" name="name" id="name" required>
+                        <label>Enter Your Name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="phone-portrait"></ion-icon>
+                        </span>
+                        <input type="tel" name="phone" id="phone" pattern="[0]{1}-[7-9]{1}-[0-9]{9}" required>
+                        <label>Enter Your Phone Number</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" name="email" id="email" required>
+                        <label>Enter Your Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" name="password" id="password" required>
+                        <label>Enter Your Password</label>
+                    </div>
+                    <div>
+                        <button id="signup-button" type="submit" class="submit-btn">Signup</button>
+                        <div class="reg-link">
+                            <p>Already a member? <a href="index.html">Login Now</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</html>
